@@ -9,7 +9,38 @@
   </head>
   <body>
     <header class="header">
+      <div class="shadow shadow-open"></div>
       <div class="container">
+        <div class="burger burger-close">
+          <button class="close">Закрыть</button>
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#main" id="main-link" class="menu__link">Главная</a></li>
+              <li class="menu__item">
+                <a href="#case" id="uslugi-link" class="menu__link">Об услуге</a></li>
+              <li class="menu__item">
+                <a href="#why" id="why-link" class="menu__link">Почему мы</a></li>
+              <li class="menu__item">
+                <a href="#work" id="work-link" class="menu__link">Этапы работы</a></li>
+            </ul>
+            <div class="menu__info">
+              <a href="tel:+78003026180" class="menu__tel">8(800)302-61-80</a>
+              <a href="mailto:info@insideholding.ru" class="menu__email">info@insideholding.ru</a>
+            </div>
+            <button class="menu__btn">Оставить заявку</button>
+          </div>
+          <div class="menu__social">
+            <a href="#" class="menu__social-link">
+              <img src="images/vk-burger.svg" alt="vk" class="menu__social-img"></a>
+              <a href="#" class="menu__social-link">
+                <img src="images/tel-burger.svg" alt="tel" class="menu__social-img">
+              </a>
+              <a href="#" class="menu__social-link">
+                <img src="images/whatsap-burger.svg" alt="" class="menu__social-img">
+              </a>
+          </div>
+        </div>
         <div class="header__inner">
           <div class="header__block">
             <a href="#" class="header__logo">
@@ -22,16 +53,16 @@
           </div>
           <ul class="header__list">
             <li class="header__list-item">
-              <a href="#" class="header__list-link">Почему мы </a>
+              <a href="#why" class="header__list-link">Почему мы </a>
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__list-link">Об услуге </a>
+              <a href="#company" class="header__list-link">Об услуге </a>
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__list-link">Этапы работы</a>
+              <a href="#work" class="header__list-link">Этапы работы</a>
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__list-link">Контакты</a>
+              <a href="#fotter" class="header__list-link">Контакты</a>
             </li>
             <li class="header__list-item">
               <a href="tel:+78003026180" class="header__list-link tel"
@@ -39,11 +70,32 @@
               >
             </li>
           </ul>
+          <div class="social">
+
+            <a href="" class="header__call">
+              <img src="images/call.svg" alt="">
+            </a>
+            <div class="header__burger">
+              <a href="#" class="">
+                <img src="images/burger.svg" alt="">
+              </a>
+            </div>
+            
+          </div>
           <button class="header__btn">Заказать звонок</button>
         </div>
       </div>
     </header>
-    <main class="main">
+    <main id="main" class="main">
+      <div class="popup popup-open">
+        <div class="popup__title">Дарим бесплатную консультацию!</div>
+        <p class="popup__text">Оставьте свои данные и наш менеджер с вами свяжется в течении 20 минут</p>
+        <form action="" class="form__popup">
+          <input type="text" placeholder="Ваше имя" class="popup__input-name">
+          <input type="tel" placeholder="+7(999) 999-99-99" class="popup__input-telephone">
+          <button class="popup__btn">Оставить заявку</button>
+        </form>
+      </div>
       <section class="avito">
         <div class="container">
           <div class="avito__inner">
@@ -53,14 +105,14 @@
               </h1>
               <ul class="avito__block-list">
                 <li class="avito__block-item">Умножь продажи до 200%</li>
-                <li class="avito__block-item">
+                <li class="avito__block-item item-close">
                   Окупай вложения в 10 раз быстрее
                 </li>
-                <li class="avito__block-item">Подними конверсию на 40-70%</li>
-                <li class="avito__block-item">
+                <li class="avito__block-item item-close">Подними конверсию на 40-70%</li>
+                <li class="avito__block-item item-close">
                   Привлекай клиентов вдвое дешевле
                 </li>
-                <li class="avito__block-item">
+                <li class="avito__block-item item-close">
                   Закажи свой бизнес на Авито уже сегодня!
                 </li>
               </ul>
@@ -73,6 +125,14 @@
                   <img src="images/telegram.png" alt="" />
                 </a>
               </div>
+              <div class="avito__block-btn-2">
+                <a href="#" class="avito__block-btn-whatsap">
+                  <img src="images/whatsap-burger.svg" alt="whatsap" />
+                </a>
+                <a href="#" class="avito__block-btn-telegram">
+                  <img src="images/tel-burger.svg" alt="telegram" />
+                </a>
+              </div>
             </div>
             <div class="avito__block-2">
               <img src="images/main.png" alt="" class="avito__block-img" />
@@ -81,11 +141,13 @@
                 <span>7 лет работы с Авито</span>
               </div>
               <div class="avito__block-wrapper-2">
-                <img src="images/grafik.svg" alt="" />
+                <img class="grafik" src="images/grafik.svg" alt="" />
+                <img class="grafik-2" src="images/grafik-2.svg" alt="" />
                 <span>Рост заявок от 30%</span>
               </div>
               <div class="avito__block-wrapper-3">
-                <img src="images/icon.svg" alt="" />
+                <img class="grafik-4" src="images/icon.svg" alt="" />
+                <img class="grafik-3" src="images/grafik-3.svg" alt="" />
                 <span>Работаем с бюджетом от 30.000 ₽</span>
               </div>
             </div>
@@ -123,12 +185,15 @@
           </div>
         </div>
       </section>
-      <section class="company">
+      <section id="company" class="company">
         <div class="container">
           <div class="company__wrapper">
             <div class="bg-1"></div>
             <div class="bg-2"></div>
             <div class="bg-3"></div>
+            <div class="bg-4"></div>
+            <div class="bg-5"></div>
+            <div class="bg-6"></div>
             <div class="company__block">
               <h2 class="company__block-title">
                 Встречайте - крупнейший диджитал-холдинг на пространстве России
@@ -163,11 +228,11 @@
           </div>
         </div>
       </section>
-      <section class="work">
+      <section id="work" class="work">
         <div class="container">
           <h2 class="work__title">Смотри, как строится наша работа</h2>
           <div class="work__wrapper">
-            <div class="work__block">
+            <div class="work__block block">
               <div class="work__block-wrapper wrap-1">
                 <div class="wrap-2"></div>
                 <span class="work__block-span">01</span>
@@ -191,8 +256,8 @@
               <div class="work__block-wrapper wrap-5">
                 <div class="wrap-6"></div>
                 <span class="work__block-span">03</span>
-                <h4 class="work__block-text wrap-text-2">
-                  Проводим подробный анализ текущей ситуации
+                <h4 class="work__block-text wrap-text-2 wrap-text-3">
+                  Запускаем рекламную кампанию и приводим клиентов
                 </h4>
               </div>
               <img src="images/group-3.png" alt="" class="work__block-img" />
@@ -228,6 +293,7 @@
             <div class="work__block block-6">
               <div class="work__block-wrapper wrap-13">
                 <div class="wrap-14"></div>
+                <div class="wrap-15"></div>
                 <span class="work__block-span">06</span>
                 <h4 class="work__block-text text-wrap-6">
                   После запуска проанализируем еще раз и внесем корректировки
@@ -246,13 +312,15 @@
       <section class="rewiews">
         <div class="container">
           <div class="reviews__inner">
+            <h2 class="reviews__block-title block-title">Отзывы говорят сами за себя</h2>
+
             <img
               src="images/rewiew.png"
               alt="review"
               class="reviews__inner-img"
             />
             <div class="reviews__block">
-              <h2 class="reviews__block-title">Отзывы говорят сами за себя</h2>
+              <h2 class="reviews__block-title block-title-close">Отзывы говорят сами за себя</h2>
               <p class="reviews__block-text">
                 Мы заботимся о том, чтобы наши услуги приносили прибыль и наши
                 отзывы говорят за нас! Читай отзывы о нашей работе на Авито
@@ -288,7 +356,7 @@
               <div class="hover-3 ">
                 Знаем о работу сайта больше, чем обычные пользователи
               </div>
-              <h3 class="causes__block-text block-star-2">
+              <h3 class="causes__block-text block-star-2 causes-h3">
                 Серцифицированные специалисты
               </h3>
               <div class="hover-4">
@@ -303,14 +371,14 @@
             <div class="disc-wrap-1"></div>
             <div class="disc-wrap-2"></div>
             <div class="disc-wrap-3"></div>
-            <h3 class="discount__title">Ты получаешь максимум обращений с Авито при минимальной стоимости клиента
+            <h3 class="discount__title">Ты получаешь максимум обращений c Авито при минимальной стоимости клиента
             </h3>
             <p class="discount__text">Мы дарим скидку новым клиентам, которая сохраняется с тобой навсегда</p>
             <button class="discount__btn">Оставить заявку</button>
           </div>
         </div>
       </section>
-      <section class="case">
+      <section id="case" class="case">
         <div class="container">
           <div class="case__inner">
             <h2 class="case__title">Кейсы</h2>
@@ -334,7 +402,7 @@
           </div>
         </div>
       </section>
-      <section class="why">
+      <section id="why" class="why">
         <div class="container">
           <h3 class="why__title">Почему именно мы?</h3>
           <div class="why__wrapper">
@@ -458,19 +526,22 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
+      <footer id="fotter" class="footer">
         <div class="container">
           <div class="footer__wrapper">
             <div class="footer__inner">
               <div class="footer__logo">
                 <div class="footer__logotip">
-                  <img src="images/footer-logo.png" alt="INSIDE" class="footer__logo-img">
+                  <a href="#">
+
+                    <img src="images/footer-logo.png" alt="INSIDE" class="footer__logo-img">
+                  </a>
                   <div class="footer__logo-name-company">
                     <div class="footer__logo-name">INSIDE</div>
                     <div class="footer__logo-name-1">MARKETING</div>
                     </div>
                 </div>
-                <p class="footer__conf">политика конфиденциальности</p>
+                <p class="footer__conf conf-close">политика конфиденциальности</p>
               </div>
               <div class="footer__block">
                 <div class="footer__block-tel">
@@ -490,6 +561,8 @@
                     <img src="images/vk-footer.png" alt="vk" class="footer__block-social-img">
                   </a>
                 </div>
+                <p class="footer__conf conf-open">политика конфиденциальности</p>
+
               </div>
             </div>
           </div>
